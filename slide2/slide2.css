@@ -16,9 +16,6 @@
   top: 0px;
   width: 317px;
   height: 768px;
-  animation: fadeInLeft 0.7s;
-  animation-delay: 0.1s;
-  animation-fill-mode: both;
   z-index: 2;
 }
 
@@ -28,8 +25,5 @@
   top: 48px;
   width: 425px;
   height: 228px;
-  animation: fadeInDown 0.7s;
-  animation-delay: 0.5s;
-  animation-fill-mode: both;
   z-index: 4;
 }
