@@ -101,22 +101,22 @@ Copyright (c) 2015 Daniel Eden
 }
 
 @-webkit-keyframes flash {
-  0%, 50%, 100% {
-    opacity: 1;
+  0%, 25%, 50% {
+    opacity: 0;
   }
 
-  25%, 75% {
-    opacity: 0;
+  75%, 100% {
+    opacity: 1;
   }
 }
 
 @keyframes flash {
-  0%, 50%, 100% {
-    opacity: 1;
+  0%, 25%, 50% {
+    opacity: 0;
   }
 
-  25%, 75% {
-    opacity: 0;
+  75%, 100% {
+    opacity: 1;
   }
 }
 
