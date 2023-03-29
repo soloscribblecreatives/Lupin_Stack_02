@@ -347,7 +347,7 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div><div class="s3_2"><img src="slide1/2.jpg" width="1024" height="768" alt=""></div><div class="s3_pop1" onclick="s3_pop1()"></div><div class="s3_c1ose1" onclick="s3_close1()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 
 }
@@ -489,16 +489,3 @@ $(document).ready(function(){
 		$('.touchbtn').css("display","block");
 	})
 })
-
-
-function s3_pop1() {
-	$('.s3_2').css("display","block");
-	$('.s3_pop1').css("display","none");
-	$('.s3_c1ose1').css("display","block");
-}
-
-function s3_close1() {
-	$('.s3_2').css("display","none");
-	$('.s3_pop1').css("display","block");
-	$('.s3_c1ose1').css("display","none");
-}
