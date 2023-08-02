@@ -10,38 +10,27 @@
 	z-index: 1;
 }
 
-.glow1 {
-  position: absolute;
-  left: 678px;
-  top: 325px;
-  width: 156px;
-  height: 153px;
-  animation: flash 2s  infinite;
-  animation-delay: 0s;
-  animation-fill-mode: both;
-  z-index: 2;
+.popup {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 7;
+	display: none;
 }
 
-.glow2 {
-  position: absolute;
-  left: 665px;
-  top: 428px;
-  width: 156px;
-  height: 153px;
-  animation: flash 2s  infinite;
-  animation-delay: 0s;
-  animation-fill-mode: both;
-  z-index: 2;
+.pop_open {
+	position: absolute;
+	width: 120px;
+	height: 100px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 5;
 }
 
-.glow3 {
-  position: absolute;
-  left: 652px;
-  top: 532px;
-  width: 156px;
-  height: 153px;
-  animation: flash 2s  infinite;
-  animation-delay: 0s;
-  animation-fill-mode: both;
-  z-index: 2;
+.pop_close {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 10;
+	display: none;
 }
