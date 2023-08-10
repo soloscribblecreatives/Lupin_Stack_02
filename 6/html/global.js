@@ -159,10 +159,10 @@ if(direction == 'b') {
 }else {
 	
 
-	if(page_id <= 3){
+	if(page_id <= 4){
 		page_id = page_id + 1;
 		//alert(page_id);
-		if(page_id == 4){
+		if(page_id == 5){
             flag=1;
         }
 	}
@@ -252,12 +252,14 @@ switch(pg_id){
 	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide3/2.jpg" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_close1" onclick="hit_close1()"></div>';
 	break;
 	case 3:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide3/1.jpg" width="1024" height="768" alt=""></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide3/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide3/2.jpg" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_close1" onclick="hit_close1()"></div>';
 	break;
-
+	case 4:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide4/1.jpg" width="1024" height="768" alt=""></div>';
+	break;
 }
 
 return content;
@@ -409,3 +411,18 @@ $(document).ready(function(){
 		$('.touchbtn').css("display","block");
 	})
 })
+
+
+/*--------------------- animation javascript -----------------------*/
+
+function hit_pop1() {
+	$('.hit_1').css("display","block");
+	$('.hit_close1').css("display","block");
+	$('.hit_pop1').css("display","none");
+}
+
+function hit_close1() {
+	$('.hit_1').css("display","none");
+	$('.hit_pop1').css("display","block");
+	$('.hit_close1').css("display","none");
+}
