@@ -1,4 +1,4 @@
-* {
+*{
 	margin: 0px;
 	padding: 0px;
 }
@@ -7,4 +7,165 @@
 	position: absolute;
 	width: 1024px;
 	height: 768px;
+	z-index: 1;
+}
+
+.s1 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 1;
+}
+
+.s2 {
+	position: absolute;
+  left: 76px;
+  top: 30px;
+  width: 872px;
+  height: 113px;
+	animation: slideInUp 0.5s;
+	animation-delay: 0s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s3w {
+	position: absolute;
+  left: 370px;
+  top: 342px;
+  width: 284px;
+  height: 295px;
+	animation: slideLeft1 0.5s;
+	animation-delay: 2s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s3 {
+	position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 284px;
+  height: 295px;
+	animation: fadeInRight 0.5s;
+	animation-delay: 0.5s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s4w {
+	position: absolute;
+  left: 330px;
+  top: 187px;
+  width: 364px;
+  height: 84px;
+	animation: slideLeft2 0.5s;
+	animation-delay: 2s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s4 {
+	position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 364px;
+  height: 84px;
+	animation: zoomIn 0.5s;
+	animation-delay: 0.5s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s5 {
+	position: absolute;
+  left: 541px;
+  top: 328px;
+  width: 236px;
+  height: 310px;
+	animation: fadeInRight 0.5s;
+	animation-delay: 2s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s6 {
+	position: absolute;
+  left: 571px;
+  top: 187px;
+  width: 317px;
+  height: 84px;
+	animation: zoomIn 0.5s;
+	animation-delay: 2s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s7 {
+	position: absolute;
+  left: 338px;
+  top: 667px;
+  width: 355px;
+  height: 49px;
+	animation: flashLong 0.2s 3;
+	animation-delay: 2.5s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+
+@keyframes slideLeft1 {
+  0% {
+  opacity: 1;
+  left: 370px;
+  top: 342px;
+  width: 284px;
+  height: 295px;
+  }
+
+  100% {
+  opacity: 1;
+  left: 269px;
+  top: 342px;
+  width: 284px;
+  height: 295px;
+  }
+}
+
+@keyframes slideLeft2 {
+  0% {
+  opacity: 1;
+  left: 330px;
+  top: 187px;
+  width: 364px;
+  height: 84px;
+  }
+
+  100% {
+  opacity: 1;
+  left: 136px;
+  top: 187px;
+  width: 364px;
+  height: 84px;
+  }
+}
+
+@keyframes flashLongOn {
+  0%,  100% {
+    opacity: 1;
+  }
+
+  25%, 50%, 75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flashLong {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

@@ -1,0 +1,123 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.s1 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 1;
+}
+
+.s2 {
+	position: absolute;
+	left: -370px;
+    top: 399px;
+    width: 375px;
+    height: 369px;
+	animation: slideInLeftBig 4s linear infinite;
+	animation-delay: 0s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s3 {
+	position: absolute;
+  left: 305px;
+  top: 401px;
+  width: 414px;
+  height: 70px;
+	animation: fadeInUp 0.5s;
+	animation-delay: 0s;
+	animation-fill-mode: both;
+	z-index: 7;
+}
+
+.s4 {
+	position: absolute;
+  left: 399px;
+  top: 499px;
+  width: 227px;
+  height: 116px;
+	animation: zoomIn 0.5s;
+	animation-delay: 0.5s;
+	animation-fill-mode: both;
+	z-index: 7;
+}
+
+@keyframes swingIn {
+  0%, 50%, 100% {
+    opacity: 1;
+	transform: translateX(-6px) rotateZ(-6deg);
+  }
+
+  25%, 75% {
+    opacity: 1;
+	transform: translateX(-6px) rotateZ(6deg);
+  }
+}
+
+@keyframes slideLeft1 {
+  0% {
+  opacity: 1;
+  left: 370px;
+  top: 342px;
+  width: 284px;
+  height: 295px;
+  }
+
+  100% {
+  opacity: 1;
+  left: 269px;
+  top: 342px;
+  width: 284px;
+  height: 295px;
+  }
+}
+
+@keyframes slideLeft2 {
+  0% {
+  opacity: 1;
+  left: 330px;
+  top: 187px;
+  width: 364px;
+  height: 84px;
+  }
+
+  100% {
+  opacity: 1;
+  left: 136px;
+  top: 187px;
+  width: 364px;
+  height: 84px;
+  }
+}
+
+@keyframes flashLongOn {
+  0%,  100% {
+    opacity: 1;
+  }
+
+  25%, 50%, 75% {
+    opacity: 0;
+  }
+}
+
+@keyframes slideInLeftBig {
+  0% {
+	left: -370px;
+    top: 399px;
+    width: 375px;
+    height: 369px;
+    opacity: 1;
+  }
+
+  100% {
+	left: 1089px;
+	top: 399px;
+	width: 375px;
+	height: 369px;
+    opacity: 1;
+  }
+} 

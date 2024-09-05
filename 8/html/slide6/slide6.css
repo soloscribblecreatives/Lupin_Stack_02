@@ -1,0 +1,99 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.s1 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 1;
+}
+
+.s2 {
+	position: absolute;
+  left: 370px;
+  top: 387px;
+  width: 283px;
+  height: 282px;
+	animation: zoomIn 0.5s;
+	animation-delay: 0s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s3 {
+	position: absolute;
+  left: 131px;
+  top: 502px;
+  width: 317px;
+  height: 94px;
+	animation: leftArrow 1s infinite;
+	animation-delay: 0.5s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s4 {
+	position: absolute;
+  left: 575px;
+  top: 502px;
+  width: 318px;
+  height: 94px;
+	animation: rightArrow 1s infinite;
+	animation-delay: 0.5s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+@keyframes leftArrow {
+  0% {
+    opacity: 1;
+	left: 131px;
+    top: 502px;
+    width: 317px;
+    height: 94px;
+  }
+
+  50% {
+    opacity: 1;
+	left: 101px;
+    top: 502px;
+    width: 317px;
+    height: 94px;
+  }
+  
+  100% {
+    opacity: 1;
+	left: 131px;
+    top: 502px;
+    width: 317px;
+    height: 94px;
+  }
+}
+
+@keyframes rightArrow {
+  0% {
+    opacity: 1;
+  left: 575px;
+  top: 502px;
+  width: 318px;
+  height: 94px;
+  }
+
+  50% {
+    opacity: 1;
+  left: 605px;
+  top: 502px;
+  width: 318px;
+  height: 94px;
+  }
+  
+  100% {
+    opacity: 1;
+  left: 575px;
+  top: 502px;
+  width: 318px;
+  height: 94px;
+  }
+}

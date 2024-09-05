@@ -1,4 +1,4 @@
-* {
+*{
 	margin: 0px;
 	padding: 0px;
 }
@@ -10,40 +10,51 @@
 	z-index: 1;
 }
 
-.pointer {
-	position: absolute;
-  left: 161px;
-  top: 623px;
-  width: 46px;
-  height: 45px;
-	animation: navigate 5s infinite;
-    animation-delay: 0s;
-    animation-fill-mode: both;
-	transition-timing-function: linear;
-	z-index: 5;
-}
-
-.hit_1 {
-  position: absolute;
-  width: 1024px;
-  height: 768px;
-  display: none;
-  z-index: 15;
-}
-
-.hit_pop1 {
-	position: absolute;
-  left: 233px;
-  top: 255px;
-  width: 527px;
-  height: 93px;
-	z-index: 10;
-}
-
-.hit_close1 {
+.s1 {
 	position: absolute;
 	width: 1024px;
 	height: 768px;
-	display: none;
-	z-index: 20;
+	z-index: 1;
+}
+
+.s2 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	animation: fadeIn 0.5s;
+	animation-delay: 1s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s3 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	animation: fadeIn 0.5s;
+	animation-delay: 2.5s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s4 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	animation: fadeIn 0.5s;
+	animation-delay: 4s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+@keyframes swingIn {
+  0%, 50%, 100% {
+    opacity: 1;
+	transform: translateX(-6px) rotateZ(-6deg);
+  }
+
+  25%, 75% {
+    opacity: 1;
+	transform: translateX(-6px) rotateZ(6deg);
+  }
 }

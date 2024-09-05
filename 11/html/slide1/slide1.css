@@ -1,0 +1,68 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.background {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 1;
+}
+
+.s1 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 1;
+}
+
+.s2 {
+	position: absolute;
+  left: 143px;
+  top: 451px;
+  width: 294px;
+  height: 294px;
+	animation: swingIn 4s infinite;
+	animation-delay: 0s;
+	animation-fill-mode: both;
+	transform-origin: bottom;
+	z-index: 5;
+}
+
+.s3 {
+	position: absolute;
+  left: 592px;
+  top: 454px;
+  width: 275px;
+  height: 74px;
+	animation: flash 0.5s;
+	animation-delay: 0.7s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s4 {
+	position: absolute;
+  left: 71px;
+  top: 384px;
+  width: 198px;
+  height: 378px;
+	animation: swingIn 4s infinite;
+	animation-delay: 1s;
+	animation-fill-mode: both;
+	transform-origin: bottom;
+	z-index: 5;
+}
+
+@keyframes swingIn {
+  0%, 50%, 100% {
+    opacity: 1;
+	transform: translateX(0px) rotateZ(-3deg);
+  }
+
+  25%, 75% {
+    opacity: 1;
+	transform: translateX(30px) rotateZ(7deg);
+  }
+}

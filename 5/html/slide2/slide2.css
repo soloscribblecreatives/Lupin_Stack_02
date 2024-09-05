@@ -1,0 +1,51 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.background {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 1;
+}
+
+.s1 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 1;
+}
+
+.s2 {
+	position: absolute;
+  left: 188px;
+  top: 620px;
+  width: 268px;
+  height: 99px;
+	animation: upDown 1s infinite;
+	animation-delay: 0s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+@keyframes upDown {
+	0%  {
+  left: 188px;
+  top: 601px;
+  width: 268px;
+  height: 100px;
+	}
+	50%	{
+  left: 188px;
+  top: 612px;
+  width: 268px;
+  height: 100px;
+	}
+	100%  {
+  left: 188px;
+  top: 601px;
+  width: 268px;
+  height: 100px;
+	}
+}
