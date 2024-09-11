@@ -3,8 +3,21 @@
 	padding: 0px;
 }
 
-.background {
+.s1 {
 	position: absolute;
 	width: 1024px;
 	height: 768px;
+	z-index: 1;
+}
+
+.s2 {
+  position: absolute;
+  left: 48px;
+  top: 51px;
+  width: 184px;
+  height: 67px;
+  	animation: flash 0.4s infinite;
+	animation-delay: 0s;
+	animation-fill-mode: both;
+  z-index: 2;
 }
