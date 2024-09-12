@@ -22,7 +22,7 @@
 	width: 1024px;
 	height: 768px;
 	animation: fadeIn 0.5s;
-	animation-delay: 1s;
+	animation-delay: 2s;
 	animation-fill-mode: both;
 	z-index: 5;
 }
@@ -32,7 +32,7 @@
 	width: 1024px;
 	height: 768px;
 	animation: fadeIn 0.5s;
-	animation-delay: 2.5s;
+	animation-delay: 4s;
 	animation-fill-mode: both;
 	z-index: 5;
 }
@@ -42,7 +42,7 @@
 	width: 1024px;
 	height: 768px;
 	animation: fadeIn 0.5s;
-	animation-delay: 4s;
+	animation-delay: 6s;
 	animation-fill-mode: both;
 	z-index: 5;
 }
@@ -54,7 +54,7 @@
   width: 328px;
   height: 321px;
 	animation: zoomIn 0.5s;
-	animation-delay: 4s;
+	animation-delay: 6s;
 	animation-fill-mode: both;
 	z-index: 5;
 }
@@ -66,7 +66,7 @@
 	width: 1024px;
 	height: 768px;
 	animation: fadeIn 0.5s;
-	animation-delay: 4.2s;
+	animation-delay: 6.2s;
 	animation-fill-mode: both;
 	z-index: 7;
 }
@@ -78,7 +78,7 @@
   width: 61px;
   height: 104px;
 	animation: rotateInLoop 1s infinite linear;
-	animation-delay: 4.5s;
+	animation-delay: 6.5s;
 	animation-fill-mode: both;
 	transform-origin: 22% 85%;
 	z-index: 7;
@@ -90,8 +90,8 @@
   top: 250px;
   width: 17px;
   height: 93px;
-	animation: rotateInLoop 2s infinite linear;
-	animation-delay: 4.5s;
+	animation: rotateInLoop 8s infinite linear;
+	animation-delay: 6.5s;
 	animation-fill-mode: both;
 	transform-origin: 50% 19%;
 	z-index: 9;
@@ -104,7 +104,7 @@
   width: 20px;
   height: 110px;
 	animation: rotateInLoop 3s infinite linear;
-	animation-delay: 4.5s;
+	animation-delay: 6.5s;
 	animation-fill-mode: both;
 	transform-origin: 45% 84%;
 	z-index: 11;

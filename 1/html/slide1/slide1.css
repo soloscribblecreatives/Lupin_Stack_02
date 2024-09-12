@@ -16,8 +16,18 @@
   top: 51px;
   width: 184px;
   height: 67px;
-  	animation: flash 0.4s infinite;
+  	animation: flashLong 2s infinite;
 	animation-delay: 0s;
 	animation-fill-mode: both;
   z-index: 2;
+}
+
+@keyframes flashLong {
+  0%,  100% {
+    opacity: 0;
+  }
+
+  25%, 50%, 75% {
+    opacity: 1;
+  }
 }
