@@ -249,10 +249,10 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/s1.png" width="1024" height="768" alt=""></div><div class="s2"><img src="slide1/s2.png"/></div><div class="s3"><img src="slide1/s3.png"/></div><div class="s4"><img src="slide1/s4.png"/></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1080" height="810" alt=""></div>';
 	break;
 	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="background"><img src="slide2/s1.png" width="1024" height="768" alt=""></div><div class="s2"><img src="slide2/s2.png"/></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1080" height="810" alt=""></div>';
 	break;
 }
 
@@ -405,65 +405,3 @@ $(document).ready(function(){
 		$('.touchbtn').css("display","block");
 	})
 })
-
-/*--------------------- animation javascript -----------------------*/
-
-function hit_pop1() {
-	$('.hit_1').css("display","block");
-	$('.hit_close1').css("display","block");
-	$('.hit_pop1').css("display","none");
-}
-
-function hit_pop2() {
-	$('.hit_2').css("display","block");
-	$('.hit_close1').css("display","block");
-	$('.hit_pop2').css("display","none");
-}
-
-function hit_pop3() {
-	$('.hit_3').css("display","block");
-	$('.hit_close1').css("display","block");
-	$('.hit_pop3').css("display","none");
-}
-
-function hit_pop4() {
-	$('.hit_4').css("display","block");
-	$('.hit_close1').css("display","block");
-	$('.hit_pop4').css("display","none");
-}
-
-function hit_pop5() {
-	$('.hit_5').css("display","block");
-	$('.hit_close1').css("display","block");
-	$('.hit_pop5').css("display","none");
-}
-
-function hit_pop6() {
-	$('.hit_6').css("display","block");
-	$('.hit_close1').css("display","block");
-	$('.hit_pop6').css("display","none");
-}
-
-function hit_pop7() {
-	$('.hit_7').css("display","block");
-	$('.hit_close1').css("display","block");
-	$('.hit_pop7').css("display","none");
-}
-
-function hit_close1() {
-	$('.hit_1').css("display","none");
-	$('.hit_2').css("display","none");
-	$('.hit_3').css("display","none");
-	$('.hit_4').css("display","none");
-	$('.hit_5').css("display","none");
-	$('.hit_6').css("display","none");
-	$('.hit_7').css("display","none");
-	$('.hit_pop1').css("display","block");
-	$('.hit_pop2').css("display","block");
-	$('.hit_pop3').css("display","block");
-	$('.hit_pop4').css("display","block");
-	$('.hit_pop5').css("display","block");
-	$('.hit_pop6').css("display","block");
-	$('.hit_pop7').css("display","block");
-	$('.hit_close1').css("display","none");
-}

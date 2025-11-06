@@ -1,4 +1,4 @@
-*{
+* {
 	margin: 0px;
 	padding: 0px;
 }
@@ -7,61 +7,4 @@
 	position: absolute;
 	width: 1024px;
 	height: 768px;
-	z-index: 1;
-}
-
-.s1 {
-	position: absolute;
-	width: 1024px;
-	height: 768px;
-	z-index: 1;
-}
-
-.s2 {
-	position: absolute;
-  left: 388px;
-  top: 388px;
-  width: 518px;
-  height: 127px;
-	animation: slideInRight 0.5s;
-	animation-delay: 0s;
-	animation-fill-mode: both;
-	z-index: 5;
-}
-
-.s3 {
-	position: absolute;
-  left: 303px;
-  top: 535px;
-  width: 634px;
-  height: 81px;
-	animation: fadeInUp 0.5s;
-	animation-delay: 0.5s;
-	animation-fill-mode: both;
-	z-index: 5;
-}
-
-.s4 {
-	position: absolute;
-  left: 71px;
-  top: 384px;
-  width: 198px;
-  height: 378px;
-	animation: swingIn 4s infinite;
-	animation-delay: 1s;
-	animation-fill-mode: both;
-	transform-origin: bottom;
-	z-index: 5;
-}
-
-@keyframes swingIn {
-  0%, 50%, 100% {
-    opacity: 1;
-	transform: translateX(-6px) rotateZ(-6deg);
-  }
-
-  25%, 75% {
-    opacity: 1;
-	transform: translateX(-6px) rotateZ(6deg);
-  }
 }

@@ -158,10 +158,10 @@ if(direction == 'b') {
 }else {
 	
 
-	if(page_id <= 5){
+	if(page_id <= 1){
 		page_id = page_id + 1;
 		//alert(page_id);
-		if(page_id == 6){
+		if(page_id == 2){
             flag=1;
         }
 	}
@@ -251,19 +251,7 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-    case 3:
-	content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="background"><img src="slide3/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide3/pop1.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide3/pop2.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_3"><img src="slide3/pop3.png" width="1024" height="768" alt=""/></div><div class="hit_pop3" onclick="hit_pop3()"></div><div class="hit_close1" onclick="hit_close1()"></div>';
-	break;
-    case 4:
-	content='<link rel="stylesheet" type="text/css" href="slide4/slide4.css" media="screen"/><div class="background"><img src="slide4/s1.png" width="1024" height="768" alt=""></div><div class="s2"><img src="slide4/s2.png"/></div><div class="s3"><img src="slide4/s3.png"/></div>';
-	break;
-	case 5:
-	content='<link rel="stylesheet" type="text/css" href="slide5/slide5.css" media="screen"/><div class="background"><img src="slide5/s1.png" width="1024" height="768" alt=""></div><div class="s2"><img src="slide5/s2.png"/></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1080" height="810" alt=""></div>';
 	break;
 }
 
@@ -417,7 +405,6 @@ $(document).ready(function(){
 	})
 })
 
-
 /*--------------------- animation javascript -----------------------*/
 
 function hit_pop1() {
@@ -478,4 +465,8 @@ function hit_close1() {
 	$('.hit_pop6').css("display","block");
 	$('.hit_pop7').css("display","block");
 	$('.hit_close1').css("display","none");
+}
+
+function takeCover() {
+		open_page("",1);
 }

@@ -158,10 +158,10 @@ if(direction == 'b') {
 }else {
 	
 
-	if(page_id <= 12){
+	if(page_id <= 1){
 		page_id = page_id + 1;
 		//alert(page_id);
-		if(page_id == 13){
+		if(page_id == 2){
             flag=1;
         }
 	}
@@ -251,40 +251,7 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 3:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide3/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 4:
-	content='<link rel="stylesheet" type="text/css" href="slide4/slide4.css" media="screen"/><div class="background"><img src="slide4/s1.png" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide4/pop1.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_close1" onclick="hit_close1()"></div>';
-	break;
-	case 5:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide5/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 6:
-	content='<link rel="stylesheet" type="text/css" href="slide6/slide6.css" media="screen"/><div class="s1"><img src="slide6/s1.png" width="1024" height="768" alt=""/></div><div class="s2"><img src="slide6/s2.png"/></div><div class="s3"><img src="slide6/s3.png"/></div><div class="s4"><img src="slide6/s4.png"/></div>';
-	break;
-	case 7:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide7/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 8:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide8/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 9:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide9/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 10:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide10/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 11:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide11/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 12:
-	content='<link rel="stylesheet" type="text/css" href="slide12/slide12.css" media="screen"/><div class="background"><img src="slide12/s1.png" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide12/pop1.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide12/pop2.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1080" height="810" alt=""></div>';
 	break;
 }
 
@@ -498,4 +465,8 @@ function hit_close1() {
 	$('.hit_pop6').css("display","block");
 	$('.hit_pop7').css("display","block");
 	$('.hit_close1').css("display","none");
+}
+
+function takeCover() {
+		open_page("",1);
 }

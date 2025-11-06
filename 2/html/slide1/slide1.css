@@ -3,13 +3,6 @@
 	padding: 0px;
 }
 
-.background {
-	position: absolute;
-	width: 1024px;
-	height: 768px;
-	z-index: 1;
-}
-
 .s1 {
 	position: absolute;
 	width: 1024px;
@@ -19,114 +12,12 @@
 
 .s2 {
 	position: absolute;
-	width: 1024px;
-	height: 768px;
-	animation: fadeIn 0.5s;
-	animation-delay: 2s;
+  left: 697px;
+  top: 0px;
+  width: 383px;
+  height: 810px;
+	animation: slideInRight 0.5s;
+	animation-delay: 0.5s;
 	animation-fill-mode: both;
 	z-index: 5;
-}
-
-.s3 {
-	position: absolute;
-	width: 1024px;
-	height: 768px;
-	animation: fadeIn 0.5s;
-	animation-delay: 4s;
-	animation-fill-mode: both;
-	z-index: 5;
-}
-
-.s4 {
-	position: absolute;
-	width: 1024px;
-	height: 768px;
-	animation: fadeIn 0.5s;
-	animation-delay: 6s;
-	animation-fill-mode: both;
-	z-index: 5;
-}
-
-.s5 {
-	position: absolute;
-  left: 44px;
-  top: 135px;
-  width: 328px;
-  height: 321px;
-	animation: zoomIn 0.5s;
-	animation-delay: 6s;
-	animation-fill-mode: both;
-	z-index: 5;
-}
-
-.wrap {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1024px;
-	height: 768px;
-	animation: fadeIn 0.5s;
-	animation-delay: 6.2s;
-	animation-fill-mode: both;
-	z-index: 7;
-}
-
-.s6 {
-	position: absolute;
-  left: 195px;
-  top: 181px;
-  width: 61px;
-  height: 104px;
-	animation: rotateInLoop 1s infinite linear;
-	animation-delay: 6.5s;
-	animation-fill-mode: both;
-	transform-origin: 22% 85%;
-	z-index: 7;
-}
-
-.s7 {
-	position: absolute;
-  left: 200px;
-  top: 250px;
-  width: 17px;
-  height: 93px;
-	animation: rotateInLoop 8s infinite linear;
-	animation-delay: 6.5s;
-	animation-fill-mode: both;
-	transform-origin: 50% 19%;
-	z-index: 9;
-}
-
-.s8 {
-	position: absolute;
-  left: 200px;
-  top: 175px;
-  width: 20px;
-  height: 110px;
-	animation: rotateInLoop 3s infinite linear;
-	animation-delay: 6.5s;
-	animation-fill-mode: both;
-	transform-origin: 45% 84%;
-	z-index: 11;
-}
-
-@keyframes rotateInLoop {
-	0%  {
-		-webkit-transform: rotate(0deg);
-	}
-	100%	{
-		-webkit-transform: rotate(359deg);
-	}
-}
-
-@keyframes swingIn {
-  0%, 50%, 100% {
-    opacity: 1;
-	transform: translateX(-6px) rotateZ(-6deg);
-  }
-
-  25%, 75% {
-    opacity: 1;
-	transform: translateX(-6px) rotateZ(6deg);
-  }
 }
